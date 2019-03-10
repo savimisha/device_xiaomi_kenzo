@@ -1,5 +1,5 @@
-type gx_fpd, domain;
-type gx_fpd_exec, exec_type, file_type;
+type gx_fpd, domain, binder_in_vendor_violators;
+type gx_fpd_exec, exec_type, vendor_file_type, file_type;
 type gx_fpd_device, dev_type;
 type gx_fpd_service, service_manager_type;
 type gx_fpd_data_file, file_type, data_file_type;
@@ -43,4 +43,4 @@ set_prop(gx_fpd, system_prop)
 allow gx_fpd gx_fpd_service:service_manager { add find };
 
 r_dir_file(gx_fpd, firmware_file)
-binder_call(gx_fpd, hal_fingerprint_default)
+binder_call(gx_fpd, hal_fingerprint_8956)

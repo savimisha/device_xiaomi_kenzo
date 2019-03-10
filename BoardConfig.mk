@@ -39,7 +39,8 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 VENDOR_SECURITY_PATCH := 2019-02-05
 
 # Sepolicy
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Enable real time lockscreen charging current values
 BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
