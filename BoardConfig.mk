@@ -36,7 +36,7 @@ TARGET_KERNEL_CONFIG := lineageos_kenzo_defconfig
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2019-03-05
+VENDOR_SECURITY_PATCH := 2019-06-05
 
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

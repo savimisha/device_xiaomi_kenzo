@@ -1,0 +1,13 @@
+diff --git a/src/com/android/messaging/datamodel/BugleNotifications.java b/src/com/android/messaging/datamodel/BugleNotifications.java
+index 43c0dde..cb92e16 100644
+--- a/src/com/android/messaging/datamodel/BugleNotifications.java
++++ b/src/com/android/messaging/datamodel/BugleNotifications.java
+@@ -789,7 +789,7 @@ public class BugleNotifications {
+             maybeAddWearableConversationLog(wearableExtender,
+                     (MultiMessageNotificationState) notificationState);
+             addDownloadMmsAction(notifBuilder, wearableExtender, notificationState);
+-            addReplyAction(notifBuilder, wearableExtender, notificationState);
++            //addReplyAction(notifBuilder, wearableExtender, notificationState);
+             addReadAction(notifBuilder, wearableExtender, notificationState);
+         }
+ 
