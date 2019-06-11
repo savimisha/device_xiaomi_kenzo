@@ -21,5 +21,5 @@ cd $PATH_TO_ROOT
 cd $PATH_TO_KERNEL
 git reset --hard
 git clean -dfx
-git apply $PATH_SCRIPTS/oldjackfix.path
+git apply $PATH_SCRIPTS/oldjackfix.patch
 cd $PATH_TO_ROOT

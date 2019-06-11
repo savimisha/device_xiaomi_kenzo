@@ -307,7 +307,7 @@ index 46033079347..b0d391f21a3 100644
  
  	if (mbhc->mbhc_cb->hph_pull_down_ctrl)
  		mbhc->mbhc_cb->hph_pull_down_ctrl(codec, true);
-+		
++
 +	skip_impdet_retry = false;
  
  	mbhc->mbhc_cb->lock_sleep(mbhc, false);
